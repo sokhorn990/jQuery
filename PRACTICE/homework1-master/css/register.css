@@ -1,0 +1,12 @@
+body{
+    background-image: url("../img/register.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+div.col-4{
+    margin-top: 90px;
+}
+
+div.col-8{
+    margin-top: 90px;
+}

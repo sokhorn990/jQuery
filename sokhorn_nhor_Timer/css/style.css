@@ -1,0 +1,18 @@
+h1{
+    font-size: 140px;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(219, 91, 112);
+}
+h2{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(219, 91, 112);
+}
+body{
+    background: url(/1.jpg);
+    background: no-clip;
+    background-position: center;
+    background-size: cover;
+}

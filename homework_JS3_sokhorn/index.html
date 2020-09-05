@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homework3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- link -->
+</head>
+
+<body class="bg-light mt-4">
+    <!-- modal -->
+  
+    <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal">
+        Add New
+    </button>
+    <br>
+    <hr>
+    <div class="container">
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="#" >
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" name="" id="name" placeholder="Enter name..." class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="profile">Profile</label>
+                                <input type="text" name="" id="profile" placeholder="Enter Image link"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="post">Post</label>
+                                <input type="text" name="" id="post" placeholder="Enter Image link"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">What your mind?</label>
+                                <textarea name="" id="text" cols="20" rows="2" class="form-control"></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info form-control" data-dismiss="modal" id="add">Add Now</button>                          
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- modal -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6" id="result"></div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCxf8ivXasCB5XXcDqWzOjWOOGcq5vfIKY",
+            authDomain: "homework3-8ab85.firebaseapp.com",
+            databaseURL: "https://homework3-8ab85.firebaseio.com",
+            projectId: "homework3-8ab85",
+            storageBucket: "homework3-8ab85.appspot.com",
+            messagingSenderId: "435230773014",
+            appId: "1:435230773014:web:9b95f05336e13e5553ca37",
+            measurementId: "G-44ZQQK9CGS"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        var database = firebase.firestore();
+    </script>
+
+    <script src="js/firebase.js"></script>
+</body>
+
+</html>
